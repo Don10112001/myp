@@ -189,10 +189,10 @@ if tab_selected == "Dashboard":
 
 
 # Rename the columns to 'latitude' and 'longitude'
-   # filtered_df = filtered_df.rename(columns={'Latitude': 'latitude', 'Longitude': 'longitude'})
+     filtered_df = filtered_df.rename(columns={'Latitude': 'latitude', 'Longitude': 'longitude'})
 
 # Display map using st.map
-   # st.map(filtered_df, latitude='latitude', longitude='longitude'  )
+     st.map(filtered_df, latitude='latitude', longitude='longitude'  )
 
     # Filter the data for distributors in Poland
     poland_data = filtered_df[filtered_df['Country'] == 'Poland']
